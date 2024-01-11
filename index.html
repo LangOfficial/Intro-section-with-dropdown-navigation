@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logo.svg" alt="snap logo" />
+      <input type="checkbox" class="menu-toggle" id="menu-toggle" />
+      <div id="page-mask"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Features</a>
+            <img
+              class="arrow down"
+              id="features-arrow"
+              src="images/icon-arrow-down.svg"
+            />
+          </li>
+          <div class="sub-category-container hidden" id="features-sub-category">
+            <div class="sub-category-item">
+              <img
+                class="sub-category-icon"
+                src="images/icon-todo.svg"
+                alt="todo icon"
+              />
+              <p class="sub-category-name">Todo List</p>
+            </div>
+            <div class="sub-category-item">
+              <img
+                class="sub-category-icon"
+                src="images/icon-calendar.svg"
+                alt="calendar icon"
+              />
+              <p class="sub-category-name">Calendar</p>
+            </div>
+            <div class="sub-category-item">
+              <img
+                class="sub-category-icon"
+                src="images/icon-reminders.svg"
+                alt="reminders icon"
+              />
+              <p class="sub-category-name">Reminders</p>
+            </div>
+            <div class="sub-category-item">
+              <img
+                class="sub-category-icon"
+                src="images/icon-planning.svg"
+                alt="planning icon"
+              />
+              <p class="sub-category-name">Planning</p>
+            </div>
+          </div>
+          <li>
+            <a href="#">Company</a>
+            <img
+              class="arrow down"
+              id="company-arrow"
+              src="images/icon-arrow-down.svg"
+            />
+          </li>
+          <div class="sub-category-container hidden" id="company-sub-category">
+            <p class="sub-category-name">History</p>
+            <p class="sub-category-name">Our Team</p>
+            <p class="sub-category-name">Blog</p>
+          </div>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+        <div class="auth-button-container">
+          <button class="login-button auth-button">Login</button>
+          <button class="register-button auth-button">Register</button>
+        </div>
+      </nav>
+      <label for="menu-toggle" class="menu-toggle-label">
+        <img class="menu-icon" src="images/icon-menu.svg" alt="menu" />
+      </label>
+    </header>
+    <main>
+      <div class="hero-container">
+        <img class="hero" src="images/image-hero-mobile.png" alt="hero"/>
+      </div>
+      <div class="info-container">
+        <h1 class="hero-title">Make remote work</h1>
+        <p class="hero-description">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button class="learn-more-button">Learn more</button>
+        <div class="client-container">
+          <img
+            class="databiz-client"
+            src="images/client-databiz.svg"
+            alt="databiz"
+          />
+          <img
+            class="audiophile-client"
+            src="images/client-audiophile.svg"
+            alt="audiophile"
+          />
+          <img class="meet-client" src="images/client-meet.svg" alt="meet" />
+          <img class="maker-client" src="images/client-maker.svg" alt="maker" />
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
